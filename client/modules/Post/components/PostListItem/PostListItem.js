@@ -12,6 +12,9 @@ function PostListItem(props) {
         <Link to={`/posts/${props.post.slug}-${props.post.cuid}`} >
           {props.post.title}
         </Link>
+        <Link to={`/landingPage`} >
+          landingPage
+        </Link>
       </h3>
       <p className={styles['author-name']}><FormattedMessage id="by" /> {props.post.name}</p>
       <p className={styles['post-desc']}>{props.post.content}</p>

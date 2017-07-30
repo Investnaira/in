@@ -19,6 +19,7 @@ export function Header(props, context) {
         </ul>
       </div>
       <div className={styles.content}>
+        <Link to={'/landingPage'}>Home Page</Link>
         <h1 className={styles['site-title']}>
           <Link to="/" ><FormattedMessage id="siteTitle" /></Link>
         </h1>
