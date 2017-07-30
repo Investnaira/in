@@ -54,7 +54,7 @@ const LIGHT_BAND_THEME = {
   secondaryColor: '#C99DA3'
 };
 
-export function landingPage(props) {
+export function homePage(props) {
   return (
     <LandingCanvas>
       <StrongMessageBrick
@@ -136,4 +136,4 @@ export function landingPage(props) {
 // }
 ;
 
-export default landingPage;
+export default homePage;

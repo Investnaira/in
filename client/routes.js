@@ -27,7 +27,7 @@ export default (
     <IndexRoute
       getComponent={(nextState, cb) => {
         require.ensure([], require => {
-          cb(null, require('./modules/Post/pages/PostListPage/PostListPage').default);
+          cb(null, require('./modules/Home/homePage').default);
         });
       }}
     />
@@ -40,10 +40,34 @@ export default (
       }}
     />
     <Route
-      path="/landingPage"
+      path="/home"
       getComponent={(nextState, cb) => {
         require.ensure([], require => {
-          cb(null, require('./modules/Landing/landingPage').default);
+          cb(null, require('./modules/Home/homePage').default);
+        });
+      }}
+    />
+    <Route
+      path="/post"
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Post/pages/PostListPage/PostListPage').default);
+        });
+      }}
+    />
+    <Route
+      path="/forum"
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Forum/forumPage').default);
+        });
+      }}
+    />
+    <Route
+      path="/dashboard"
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Dashboard/dashboardPage').default);
         });
       }}
     />
