@@ -29,7 +29,7 @@ const BASE_THEME = {
 const HEADER_BAND_THEME = {
   ...BASE_THEME,
   baseFontSize: '18px',
-  backgroundColor: '#71A2B6',
+  backgroundColor: '#4CAF50',
   textColor: '#FFFFFF',
   primaryColor: '#FFFFFF',
   primaryContrastColor: '#71A2B6',
@@ -59,8 +59,8 @@ export function homePage(props) {
     <LandingCanvas>
       <StrongMessageBrick
         theme={ HEADER_BAND_THEME }
-        messageLevel1="A beautiful message, but not so long"
-        messageLevel2="A related but not so important concept, that usually is a little bit longer than the previous"
+        messageLevel1="WELCOME TO INVESTNAIRA"
+        messageLevel2="SAVE SMARTLY, INVEST WISELY, COMPOUND WEALTH"
         CTAs={ <CallToAction label="sign up" /> }
       />
       <DoubleContentBrick theme={ HEAVY_BAND_THEME } hasHeader={ false }>

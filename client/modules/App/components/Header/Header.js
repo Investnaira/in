@@ -14,7 +14,7 @@ export function Header(props, context) {
     <div className={styles.header}>
       <div className={styles['language-switcher']}>
         <ul>
-          <li><Link to={'/home'}>Home Page</Link></li>
+          <li><Link to={'/home'}>Home</Link></li>
           <li><Link to={'/post'}>blog</Link></li>
           <li><Link to={'/forum'}>forum</Link></li>
           <li><Link to={'/dashboard'}>dashboard</Link></li>
@@ -25,7 +25,7 @@ export function Header(props, context) {
       <div className={styles.content}>
 
         <h1 className={styles['site-title']}>
-          <Link to="/" ><FormattedMessage id="siteTitle" /></Link>
+          <Link to="/" >INVESTNAIRA</Link>
         </h1>
         {
           context.router.isActive('/', true)
