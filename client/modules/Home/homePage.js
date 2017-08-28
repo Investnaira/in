@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { Button, ButtonToolbar, Jumbotron } from 'react-bootstrap';
 import {
   LandingCanvas,
   ThemePropagator,
@@ -24,7 +25,7 @@ import {
 const BASE_THEME = {
   fontFamily: 'Lato',
   baseFontSize: '18px'
-}
+};
 
 const HEADER_BAND_THEME = {
   ...BASE_THEME,
@@ -34,11 +35,11 @@ const HEADER_BAND_THEME = {
   primaryColor: '#FFFFFF',
   primaryContrastColor: '#71A2B6',
   objectDesign: 'square-solid'
-}
+};
 
 const HEAVY_BAND_THEME = {
   ...BASE_THEME,
-  backgroundColor: '#29D9C2',
+  backgroundColor: '#4caf50',
   textColor: '#FFFFFF',
   primaryColor: '#FFFFFF',
   primaryContrastColor: '#000000',
@@ -57,45 +58,60 @@ const LIGHT_BAND_THEME = {
 export function homePage(props) {
   return (
     <LandingCanvas>
+      <Jumbotron>
+   <h1>Hello, world!</h1>
+   <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+   <p><Button bsStyle="primary">Learn more</Button></p>
+ </Jumbotron>
+      <ButtonToolbar>
+   {/* Standard button */}
+        <Button bsSize="large">Default</Button>
+      </ButtonToolbar>
       <StrongMessageBrick
         theme={ HEADER_BAND_THEME }
         messageLevel1="WELCOME TO INVESTNAIRA"
         messageLevel2="SAVE SMARTLY, INVEST WISELY, COMPOUND WEALTH"
         CTAs={ <CallToAction label="sign up" /> }
       />
-      <DoubleContentBrick theme={ HEAVY_BAND_THEME } hasHeader={ false }>
+      <DoubleContentBrick theme={HEAVY_BAND_THEME} hasHeader>
         <ThemePropagator>
-          <h1>Our product highlight</h1>
+          <h1>Africa's Largest Investing Portal</h1>
           <p>you wont find a better product anywhere in the universe.</p>
-          <CallToAction label="buy" /><CallToAction label="learn more" />
+          {/* <CallToAction label="buy" /> */}
+          <CallToAction label="learn more" />
         </ThemePropagator>
         <PlaceHolder />
       </DoubleContentBrick>
       <GenericBrick
         theme={ LIGHT_BAND_THEME }
-        title="Yes, we can!"
-        subtitle="if you think you can do it"
+        title="InvestNaira provides a platform to :"
+        subtitle="Save Smartly (Education)  "
+        subtitle="Invest Wisely (Investments)"
+        subtitle="Compound Wealth (Community)"
         contentStyle={ {textAlign: 'center'} }>
         <PlaceHolder />
       </GenericBrick>
       <EnumerationBrick
-        theme={ HEAVY_BAND_THEME }
+        theme={HEAVY_BAND_THEME}
         title="Awesome features"
-        subtitle="You can add any number of them">
+      //  subtitle="You can add any number of them"
+      >
         <FeatureItem
           icon="rocket"
-          title="Feature 1"
-          description="bla bla bla bla bla"
+          title="Save Smartly"
+          description="Become Financially Literate via Articles, Podcasts, Videos and Seminars"
         />
         <FeatureItem
           icon="rocket"
-          title="Feature 2"
-          description="bla bla bla bla bla"
+          title="Invest Wisely"
+          description="Get the latest information on Investments. Stocks, Bonds, Currencies, Real Estate, Cryptos..."
         />
         <FeatureItem
           icon="rocket"
-          title="Feature 3"
-          description="bla bla bla bla bla"
+          title="Compound Wealth"
+          description="
+
+Join the largest Investment community as you meet experts and learn about finance and Investments"
         />
       </EnumerationBrick>
       <DoubleContentBrick theme={ LIGHT_BAND_THEME } hasHeader={ false }>

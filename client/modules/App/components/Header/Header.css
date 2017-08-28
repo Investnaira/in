@@ -1,5 +1,5 @@
 .header {
-  background: #4CAF50 center;
+  background: #4CAF50 url('./LOGO3.png') center;
   background-size: cover;
   border-bottom: 1px solid #ccc;
 }
@@ -20,7 +20,7 @@
 
 .site-title a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
 }
 
 .add-post-button {

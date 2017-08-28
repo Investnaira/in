@@ -18,8 +18,8 @@ export function Header(props, context) {
           <li><Link to={'/post'}>blog</Link></li>
           <li><Link to={'/forum'}>forum</Link></li>
           <li><Link to={'/dashboard'}>dashboard</Link></li>
-          <li><FormattedMessage id="switchLanguage" /></li>
-          {languageNodes}
+          {/* <li><FormattedMessage id="switchLanguage" /></li>
+          {languageNodes} */}
         </ul>
       </div>
       <div className={styles.content}>
