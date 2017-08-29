@@ -1,6 +1,8 @@
 import React, { PropTypes } from 'react';
 import { Button, Jumbotron, Carousel, Image, Glyphicon, Row, Col, Grid, Thumbnail,
           Form, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
+import { Icon, withBaseIcon } from 'react-icons-kit';
+import { facebook2 } from 'react-icons-kit/icomoon/facebook2';
 // Import Style
 // import styles from './homePage.css';
 //
@@ -9,7 +11,8 @@ import { Button, Jumbotron, Carousel, Image, Glyphicon, Row, Col, Grid, Thumbnai
 //
 // // Import Selectors
 // import { getPost } from '../../PostReducer';
-const FontAwesome = require('react-fontawesome');
+const IconGreen32 =
+        withBaseIcon({ size: 32, style: {color: '#4caf50'}});
 export function homePage(props) {
 
   return (
@@ -21,7 +24,7 @@ export function homePage(props) {
 
          <h1 style={{'color': '#4caf50' }}>NairaPedia</h1>
          <p style={{'color': '#fff' }}>WikiFinance (Compound-Wealth Community)</p>
-         <p style={{'color': '#fff' }}><Button bsStyle="success">Visit</Button></p>
+         <p style={{ color: '#fff' }}><Button bsStyle="success">Visit</Button></p>
        </Jumbotron>
       </Carousel.Item>
       <Carousel.Item>
@@ -104,6 +107,7 @@ export function homePage(props) {
  </Form>
         </Col>
     </Row>
+
    </Jumbotron>
 
 

@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/nodejs /usr/share/yarn/bin/yarn.js add bootstrap
+  /usr/bin/nodejs /usr/share/yarn/bin/yarn.js add react-icons-kit
 
 PATH: 
   /usr/lib/jvm/jdk1.8.0_131/bin:/home/eze/bin:/home/eze/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/eze/Android/Sdk/platform-tools:/home/eze/Android/Sdk/build-tools:/home/eze/Android/Sdk/tools:/home/eze/Android/Sdk/tools:/home/eze/Android/Sdk/platform-tools
@@ -49,6 +49,7 @@ npm manifest:
     "dependencies": {
       "babel-core": "^6.9.1",
       "body-parser": "^1.15.1",
+      "bootstrap": "^3.3.7",
       "compression": "^1.6.2",
       "cross-env": "^1.0.8",
       "cuid": "^1.3.8",
@@ -1439,6 +1440,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
     dependencies:
       hoek "2.x.x"
+  
+  bootstrap@^3.3.7:
+    version "3.3.7"
+    resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
   
   boxen@^0.5.1:
     version "0.5.1"
@@ -8459,4 +8464,4 @@ Lockfile:
       fd-slicer "~1.0.1"
 
 Trace: 
-  Error: EACCES: permission denied, open '/home/eze/hybrid/in/node_modules/nyc/node_modules/yargs/index.js'
+  Error: EACCES: permission denied, open '/home/eze/hybrid/in/node_modules/nyc/node_modules/yargs/CHANGELOG.md'
