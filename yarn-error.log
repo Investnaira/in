@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/nodejs /usr/share/yarn/bin/yarn.js add bootstrap react-bootstrap
+  /usr/bin/nodejs /usr/share/yarn/bin/yarn.js add bootstrap
 
 PATH: 
   /usr/lib/jvm/jdk1.8.0_131/bin:/home/eze/bin:/home/eze/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/eze/Android/Sdk/platform-tools:/home/eze/Android/Sdk/build-tools:/home/eze/Android/Sdk/tools:/home/eze/Android/Sdk/tools:/home/eze/Android/Sdk/platform-tools
@@ -62,6 +62,7 @@ npm manifest:
       "react": "^15.1.0",
       "react-bootstrap": "^0.31.2",
       "react-dom": "^15.6.1",
+      "react-fontawesome": "^1.6.1",
       "react-helmet": "^3.1.0",
       "react-intl": "^2.1.2",
       "react-redux": "^4.4.5",
@@ -6565,7 +6566,7 @@ Lockfile:
       object-assign "^4.1.0"
       prop-types "^15.5.10"
   
-  react-fontawesome@^1.1.0:
+  react-fontawesome@^1.1.0, react-fontawesome@^1.6.1:
     version "1.6.1"
     resolved "https://registry.yarnpkg.com/react-fontawesome/-/react-fontawesome-1.6.1.tgz#eddce17e7dc731aa09fd4a186688a61793a16c5c"
     dependencies:
@@ -8458,14 +8459,4 @@ Lockfile:
       fd-slicer "~1.0.1"
 
 Trace: 
-  Error: https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz: ESOCKETTIMEDOUT
-      at ClientRequest.<anonymous> (/usr/share/yarn/lib/yarn-cli.js:114873:19)
-      at Object.onceWrapper (events.js:293:19)
-      at emitNone (events.js:86:13)
-      at ClientRequest.emit (events.js:188:7)
-      at TLSSocket.emitTimeout (_http_client.js:679:10)
-      at Object.onceWrapper (events.js:293:19)
-      at emitNone (events.js:86:13)
-      at TLSSocket.emit (events.js:188:7)
-      at TLSSocket.Socket._onTimeout (net.js:352:8)
-      at ontimeout (timers.js:386:14)
+  Error: EACCES: permission denied, open '/home/eze/hybrid/in/node_modules/nyc/node_modules/yargs/index.js'

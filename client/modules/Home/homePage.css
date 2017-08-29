@@ -1,0 +1,14 @@
+jumbotron {
+background-image: url("https://intrawallpaper.com/static/images/HD-Wallpapers-C76.jpg");
+background-size: cover;
+}
+
+h1 {
+  padding: 15px 0 0 30px;
+  color: #4caf50;
+}
+
+p {
+  padding: 15px 0 0 30px;
+  color: #fff;
+}

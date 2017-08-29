@@ -54,7 +54,11 @@ module.exports = {
       }, {
         test: /\.json$/,
         loader: 'json-loader',
-      }, { test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/, loader: "file- loader" },
+      },
+      {
+          test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
+          loader: 'url-loader'
+      },
 
     ],
   },

@@ -246,7 +246,54 @@ Blueprints are basically [ejs](https://github.com/mde/ejs) templates which are r
 #### FOUC (Flash of Unstyled Content)
 To make the hot reloading of CSS work, we are not extracting CSS in development. Ideally, during server rendering, we will be extracting CSS, and we will get a .css file, and we can use it in the html template. That's what we are doing in production.
 
-In development, after all scripts get loaded, react loads the CSS as BLOBs. That's why there is a second of FOUC in development.
+In development, after all scripts get loaded, react loads the CSS as BLOBs. That's why there is a second of FOUC in develo
+          test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
+          loader: 'url-loader'
+      },
+
+    ],
+  },
+
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production'),
+      }
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      minChunks: Infinity,
+      filename: 'vendor.js',
+    }),
+    new ExtractTextPlugin('app.[chunkhash].css', { allChunks: true }),
+    new ManifestPlugin({
+      basePath: '/',
+    }),
+    new ChunkManifestPlugin({
+      filename: "chunk-manifest.json",
+      manifestVariable: "webpackManifest",
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: {
+        warnings: false,
+      }
+    }),
+  ],
+
+  postcss: () => [
+    postcssFocus(),
+    cssnext({
+      browsers: ['last 2 versions', 'IE > 10'],
+    }),
+    cssnano({
+      autoprefixer: false
+    }),
+    postcssReporter({
+      clearMessages: true,
+    }),
+  ],
+};
+pment.
 
 #### Client and Server Markup Mismatch
 This warning is visible only on development and totally harmless. This occurs to hash difference in `react-router`. To solve it, react router docs asks you to use `match` function. If we use `match`, `react-hot-reloader` stops working.

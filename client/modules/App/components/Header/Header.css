@@ -1,13 +1,18 @@
 .header {
-  background: #4CAF50 url('./LOGO3.png') center;
+  background: #4CAF50;
   background-size: cover;
   border-bottom: 1px solid #ccc;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  padding-right: 15px;
 }
 
 .content {
   width: 100%;
+  height: 600px;
   max-width: 980px;
-  margin: auto;
+  margin: 15px;
   padding: 64px 16px;
   overflow: auto;
 }
@@ -37,6 +42,9 @@
   background: rgba(0, 0, 0, 0.1);
 }
 
+.language-switcher ul h1 {
+  text-align: left;
+}
 .language-switcher ul {
   list-style: none;
   width: 980px;
