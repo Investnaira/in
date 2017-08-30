@@ -1,6 +1,6 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import { ButtonToolbar, Button } from 'react-bootstrap';
+// import { FormattedMessage } from 'react-intl';
+import { Button } from 'react-bootstrap';
 // Import Style
 import styles from './Footer.css';
 import { withBaseIcon } from 'react-icons-kit';
@@ -12,12 +12,12 @@ const IconGreen32 =
 // Import Images
 // import bg from './LOGO2.png';
 
-const FontAwesome = require('react-fontawesome');
+
 export function Footer() {
   return (
     <div style={{ background: '#fff  center' }} className={styles.footer}>
       <p>&copy; 2017 &middot; INVESTNAIRA &middot; </p>
-      <FontAwesome name='rocket' />
+
       <p>
     {/* <FormattedMessage id="twitterMessage" /> : <a href="https://twitter.com/@mern_io" target="_Blank">@mern_io</a> */}
       Let's keep the conversation going
