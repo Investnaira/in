@@ -12,7 +12,7 @@ import { facebook2 } from 'react-icons-kit/icomoon/facebook2';
 // // Import Selectors
 // import { getPost } from '../../PostReducer';
 const IconGreen32 =
-        withBaseIcon({ size: 32, style: {color: '#4caf50'}});
+        withBaseIcon({ size: 32, style: { color: '#4caf50' } });
 export function homePage(props) {
 
   return (
@@ -42,11 +42,13 @@ export function homePage(props) {
        </Jumbotron>
       </Carousel.Item>
     </Carousel>
-    <Jumbotron style={{ margin: '0px 0px 30px', backgroundImage: 'url(https://bucket.mlcdn.com/a/861/861811/images/3006e61447ac127c7ef997766b8fba37dd90f0b7.jpeg)', backgroundSize: 'cover'}}>
+    <Jumbotron style={{ margin: '0px 0px 30px', backgroundColor: '#cccccc'
+      //  backgroundImage: 'url(https://bucket.mlcdn.com/a/861/861811/images/3006e61447ac127c7ef997766b8fba37dd90f0b7.jpeg)', backgroundSize: 'cover'
+     }}>
     <Row className="show-grid">
       <Col md={8} sm={6} mdPush={4}>
         <h2 style={{'color': '#4caf50' }}>Most people earn but few save smartly</h2>
-        <h2 style={{'color': '#fff' }}>Few invest, but fewer invest wisely</h2>
+        <h2 style={{'color': '#4caf50' }}>Few invest, but fewer invest wisely</h2>
         <h2 style={{'color': '#4caf50' }}>And only a minor group compound wealth.</h2>
         </Col>
     </Row>
@@ -82,11 +84,14 @@ export function homePage(props) {
  </Col>
  </Row>
 </Grid>
-    <Jumbotron style={{ margin: '0px', backgroundImage: 'url(https://bucket.mlcdn.com/a/861/861811/images/3006e61447ac127c7ef997766b8fba37dd90f0b7.jpeg)', backgroundSize: 'cover'}}>
+    <Jumbotron style={{ margin: '0px', backgroundColor: '#cccccc'
+      // backgroundImage: 'url(https://bucket.mlcdn.com/a/861/861811/images/3006e61447ac127c7ef997766b8fba37dd90f0b7.jpeg)', backgroundSize: 'cover'
+    }}
+      >
     <Row className="show-grid">
-      <Col md={8} sm={6} mdPush={4}>
-        <h2 style={{'color': '#fff' }}>Life is a Game of Cards</h2>
-        <h3 style={{'color': '#fff', padding: '0px 0px 20px' }}>Everybody plays, but, there can be only one winner. And winning means having the right set of cards.</h3>
+      <Col md={8} sm={6} mdPush={2}>
+        <h2 style={{'color': '#4caf50' }}>Life is a Game of Cards</h2>
+        <h3 style={{'color': '#4caf50', padding: '0px 0px 20px' }}>Everybody plays, but, there can be only one winner. And winning means having the right set of cards.</h3>
           <h2 style={{'color': '#4caf50' }}>Sign up for our weekly educational newsletter.</h2>
         <Form inline>
    <FormGroup controlId="formInlineName">

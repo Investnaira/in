@@ -28,8 +28,8 @@ export function Header(props, context) {
      <NavItem ><Link to={'/forum'} style={{ color: '#4caf50' }}>Forum</Link></NavItem>
      <NavItem><Link to={'/dashboard'} style={{ color: '#4caf50' }}>Dashboard</Link></NavItem>
      <NavDropdown eventKey={3} title="Profile" id="basic-nav-dropdown" style={{ color: '#4caf50' }}>
-       <MenuItem eventKey={3.1}>Log In</MenuItem>
-       <MenuItem eventKey={3.2}>Sign Up</MenuItem>
+       <MenuItem ><Link to={'/login'} style={{ color: '#4caf50' }}>Login</Link></MenuItem>
+       <MenuItem ><Link to={'/signup'} style={{ color: '#4caf50' }}>Sign up</Link></MenuItem>
        {/* <MenuItem eventKey={3.3}>Something else here</MenuItem>
        <MenuItem divider />
        <MenuItem eventKey={3.3}>Separated link</MenuItem> */}
