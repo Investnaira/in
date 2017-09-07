@@ -28,8 +28,23 @@ export default class dashboardPage extends React.Component {
       ]);
 
       const sb = () => ([
-        <Sidebar.Menu header="NAVIGATION" key="1">
+        <Sidebar.Menu header="My dashboard" key="1">
     <Sidebar.Menu.Item title="Home" href="/" />
+    <Sidebar.Menu.Item title="Save Smartly" href="/">
+    <Sidebar.Menu.Item title="Reads" href="/" />
+    <Sidebar.Menu.Item title="Videos" href="/" />
+    <Sidebar.Menu.Item title="Podcasts" href="/" />
+  </Sidebar.Menu.Item>
+    <Sidebar.Menu.Item title="Invest Wisely" href="/" >
+    <Sidebar.Menu.Item title="Bonds" href="/" />
+    <Sidebar.Menu.Item title="Stocks" href="/" />
+    <Sidebar.Menu.Item title="Real Estate" href="/" />
+    <Sidebar.Menu.Item title="Forex" href="/" />
+    <Sidebar.Menu.Item title="Mutual Funds" href="/" />
+    </Sidebar.Menu.Item>
+      <Sidebar.Menu.Item title="Compound Wealth" href="/" >
+    <Sidebar.Menu.Item title="Talk to a PFA" href="/" />
+    </Sidebar.Menu.Item>
   </Sidebar.Menu>,
       ]);
 
@@ -37,7 +52,8 @@ export default class dashboardPage extends React.Component {
   <Dashboard
     navbarChildren={nav()}
     sidebarChildren={sb()}
-    theme="skin-blue"
+    theme="skin-green"
+    logoLg={<span><b>InvestNaira</b></span>}
   >
       {children}
     </Dashboard>
@@ -45,7 +61,7 @@ export default class dashboardPage extends React.Component {
 }
     else {
       console.log('no window');
-       App = () => (
+      App = () => (
     <div>Not working</div>);
     }
     return (

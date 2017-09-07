@@ -4,6 +4,7 @@ import { Button, Jumbotron, Carousel, Image, Glyphicon, Row, Col, Grid, Thumbnai
 export function loginPage(props) {
   return (
     <div>
+      <Jumbotron>
       <Form>
 <FormGroup controlId="formInlineEmail">
  <ControlLabel>Email</ControlLabel>
@@ -21,6 +22,7 @@ export function loginPage(props) {
  Log In
 </Button>
 </Form>
+</Jumbotron>
 </div>
   );
 }

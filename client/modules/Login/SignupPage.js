@@ -4,11 +4,12 @@ import { Button, Jumbotron, Carousel, Image, Glyphicon, Row, Col, Grid, Thumbnai
 export function signupPage(props) {
   return (
     <div>
+      <Jumbotron>
       <Form>
         <FormGroup controlId="formInlineUsername">
          <ControlLabel>Username</ControlLabel>
          {' '}
-         <FormControl type="email" placeholder="ezeebube5" />
+         <FormControl type="text" placeholder="What would you like us to call you?" />
         </FormGroup>
         {' '}<FormGroup controlId="formInlineEmail">
          <ControlLabel>Email</ControlLabel>
@@ -26,6 +27,7 @@ export function signupPage(props) {
  Sign Up
 </Button>
 </Form>
+</Jumbotron>
 </div>
   );
 }

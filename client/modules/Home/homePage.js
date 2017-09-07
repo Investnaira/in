@@ -1,8 +1,9 @@
 import React, { PropTypes } from 'react';
-import { Button, Jumbotron, Carousel, Image, Glyphicon, Row, Col, Grid, Thumbnail,
+import { Button, Jumbotron, Carousel, Row, Col, Grid, Thumbnail,
           Form, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
-import { Icon, withBaseIcon } from 'react-icons-kit';
+import { withBaseIcon } from 'react-icons-kit';
 import { facebook2 } from 'react-icons-kit/icomoon/facebook2';
+import { Link } from 'react-router';
 // Import Style
 // import styles from './homePage.css';
 //
@@ -60,7 +61,7 @@ export function homePage(props) {
      <h3>Save Smartly</h3>
      <p>Become Financially Literate via Articles, Podcasts, Videos and Seminars</p>
      <p>
-         <a href="https://www.investnaira.com"><Button bsStyle="success" block>Visit NairaSense</Button></a>
+       <Link to={'/forum'} style={{ color: '#4caf50' }}><Button bsStyle="success" block>Visit NairaSense</Button></Link>
      </p>
    </Thumbnail>
  </Col>
